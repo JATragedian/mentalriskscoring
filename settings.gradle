@@ -1,0 +1,5 @@
+rootProject.name = 'mentalriskscoring'
+
+include 'ingestion'
+include 'processing'
+include 'api'
