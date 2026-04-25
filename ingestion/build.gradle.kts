@@ -5,8 +5,9 @@ plugins {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-kafka")
-    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("com.fasterxml.jackson.core:jackson-databind")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
