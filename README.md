@@ -49,7 +49,7 @@ The system is built as an event-driven pipeline:
 
 ## ⚙️ Tech Stack
 
-- Java 21  
+- Kotlin (JVM) + Java 21 toolchain  
 - Spring Boot / Spring Cloud  
 - Apache Kafka  
 - PostgreSQL  

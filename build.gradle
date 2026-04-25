@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '2.2.21' apply false
+    id 'org.jetbrains.kotlin.plugin.spring' version '2.2.21' apply false
 }
 
 allprojects {
@@ -13,11 +15,17 @@ allprojects {
 
 subprojects {
     apply plugin: 'java'
+    apply plugin: 'org.jetbrains.kotlin.jvm'
+    apply plugin: 'org.jetbrains.kotlin.plugin.spring'
 
     java {
         toolchain {
             languageVersion = JavaLanguageVersion.of(21)
         }
+    }
+
+    kotlin {
+        jvmToolchain(21)
     }
 
     tasks.withType(Test).tap {
