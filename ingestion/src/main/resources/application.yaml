@@ -2,10 +2,12 @@ spring:
   application:
     name: ingestion
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: localhost:29092
+    properties:
+      schema.registry.url: http://localhost:8081
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
 
 weather:
-  api-key: 1d0f279630a4f7cbfd5a05c5358d9ea4
+  api-key: ${WEATHER_API_KEY}

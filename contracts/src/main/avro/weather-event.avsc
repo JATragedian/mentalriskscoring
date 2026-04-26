@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "WeatherEvent",
+  "namespace": "com.mentalscore.contract",
+  "fields": [
+    { "name": "location", "type": "string" },
+    { "name": "temperature", "type": "double" },
+    { "name": "humidity", "type": "int" },
+    { "name": "pressure", "type": "int" },
+    { "name": "timestamp", "type": "long" }
+  ]
+}

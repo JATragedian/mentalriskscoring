@@ -1,5 +1,6 @@
 rootProject.name = 'mentalriskscoring'
 
+include 'contracts'
 include 'ingestion'
 include 'processing'
 include 'api'

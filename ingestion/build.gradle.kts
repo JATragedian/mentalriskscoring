@@ -4,10 +4,13 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":contracts"))
+
     implementation("org.springframework.boot:spring-boot-starter-kafka")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("com.fasterxml.jackson.core:jackson-databind")
+    implementation("io.confluent:kafka-avro-serializer:8.2.0")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
