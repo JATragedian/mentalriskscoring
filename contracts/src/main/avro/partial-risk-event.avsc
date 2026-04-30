@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "PartialRiskEvent",
+  "namespace": "com.mentalscore.contract",
+  "fields": [
+    {"name": "eventId", "type": "string"},
+    {"name": "parentEventId", "type": "string"},
+    {"name": "timestamp", "type": "long"},
+    {"name": "location", "type": "string"},
+    {"name": "source", "type": "string"},
+    {"name": "value", "type": "double"}
+  ]
+}

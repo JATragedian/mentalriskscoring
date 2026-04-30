@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "FinalRiskEvent",
+  "namespace": "com.mentalscore.contract",
+  "fields": [
+    {"name": "eventId", "type": "string"},
+    {"name": "timestamp", "type": "long"},
+    {"name": "location", "type": "string"},
+    {"name": "value", "type": "double"}
+  ]
+}
